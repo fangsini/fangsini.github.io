@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="editor.css">
+	<title>editor</title>
+</head>
+<body>
+	<div class="editor">
+		<ul id="btn-list">
+			<li id="Bold" title="粗体" unselectable="on"></li>
+			<li id="italic" title="斜体" unselectable="on"></li>
+			<li id="underline" title="下划线" unselectable="on"></li>
+			<li id="JustifyCenter" title="居中" unselectable="on"></li>
+			<li id="JustifyLeft" title="左对齐" unselectable="on"></li>
+			<li id="JustifyRight" title="右对齐" unselectable="on"></li>
+			<li id="Indent" title="缩进" unselectable="on"></li>
+			<li id="insertimage" title="插入图片" unselectable="on"></li>
+			<li id="createlink" title="插入链接" unselectable="on"></li>
+			<li id="ForeColor" title="字体颜色" unselectable="on"></li>
+			<li id="BackColor" title="背景色" unselectable="on"></li>
+			<div id="colorbox"></div>
+			<select title="fontname">
+		        <option value="SimSun">宋体</option>
+		        <option value="LiSu">隶书</option>
+		        <option value="KaiTi_GB2312">楷体</option>
+		        <option value="YouYuan">幼圆</option>
+		        <option value="SimHei">黑体</option>
+		        <option value="Microsoft YaHei">雅黑</option>
+		        <option value="Comic Sans MS">Comic Sans MS</option>
+	      	</select>
+	      	<select title="fontsize">
+		        <option value="3">1号</option>
+		        <option value="4">2号</option>
+		        <option value="5">3号</option>
+		        <option value="6">4号</option>
+		        <option value="7">5号</option>
+	      	</select>
+		</ul>
+		<iframe id="iframe" frameborder="0"></iframe>
+	</div>
+	<script type="text/javascript" src="editor.js"></script>
+</body>
+</html>

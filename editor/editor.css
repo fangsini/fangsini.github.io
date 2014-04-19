@@ -1,0 +1,98 @@
+div,ul,li,p,table,tr,td{
+	padding: 0;margin: 0;
+	list-style: none;
+}
+
+.editor{
+	width: 600px;
+	height: 400px;
+	background: #ffd766;
+	margin: 0 auto;
+	position: relative;
+}
+#iframe{
+	width: 600px;
+	height: 400px;
+	background: #ffd766;
+	zoom: 1;
+	border: #ffd766;
+}
+#btn-list{
+	height: 30px;
+	margin: 5px; 
+}
+#btn-list li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	border: 1px solid;
+	border-color: #ccc white white #ccc;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#btn-list li:hover{
+	border-color: white #ccc #ccc white;
+}
+#Bold{
+	background: url(tool.gif);
+}
+#italic{
+	background: url(tool.gif) -60px 0;
+}
+#underline{
+	background: url(tool.gif) -140px 0;
+}
+#JustifyCenter{
+	background: url(tool.gif) -420px 0;
+}
+#JustifyLeft{
+	background: url(tool.gif) -460px 0;
+}
+#JustifyRight{
+	background: url(tool.gif) -480px 0;
+}
+#Indent{
+	background: url(tool.gif) -400px 0;
+}
+#insertimage{
+	background: url(tool.gif) -380px 0;
+}
+#createlink{
+	background: url(tool.gif) -500px 0;
+}
+#ForeColor{
+	background: url(tool.gif) -720px 0;
+	/*position: absolute;*/
+}
+#BackColor{
+	background: url(tool.gif) -760px 0;
+	/*position: absolute;*/
+}
+
+/*colorBox*/
+table{
+	border-collapse:collapse;
+}
+td{
+	width: 60px;
+	height: 15px;
+}
+
+#colorbox{
+	position: absolute;
+	width: 180px;
+	border: 2px solid #FFA500;
+	display: none;
+	top: 35px;
+}
+
+#colorbox .colorview{
+	width: 90px;
+	height: 26px;
+}
+
+#colorbox .colorcode{
+	width: 90px;
+	height: 26px;
+	padding-left: 20px;
+}
