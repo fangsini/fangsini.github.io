@@ -1,0 +1,50 @@
+* {padding: 0;margin: 0;}
+
+body {
+}
+.whole {
+	padding: 20px;
+}
+.letter {
+	font-size: 22px;
+	position: absolute;
+	text-align: center;
+	padding-top:55px; 
+}
+.score {
+	position: absolute;
+	right: 150px;
+}
+
+.second {
+	/*margin-left: 150px;*/
+}
+
+#num {
+	font-size: 30px;
+	/*line-height: 30px;*/
+	/*padding-top: -30px;*/
+	padding-left: 15px;
+}
+
+.highlight {
+	color: red;
+}
+
+.iconfont {
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+#life {
+	margin-left: 20px;
+}
+
+.iconfont{font-family:"iconfont";font-size:40px;font-style:normal;}
+@font-face {font-family: 'iconfont';
+    src: url('images/iconfont.eot'); /* IE9*/
+    src: url('images/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('images/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('images/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('images/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
