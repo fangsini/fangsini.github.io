@@ -1,15 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Script-Type" content="text/javascript" />
   <meta http-equiv="X-UA-Compatible" content="IE=7" />
   <title></title>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="robots" content="all" />
-  <meta name="author" content="���ף�NetEase Inc." />
-  <meta name="copyright" content="���ף�NetEase Inc." />
+  <meta name="author" content="网易，NetEase Inc." />
+  <meta name="copyright" content="网易，NetEase Inc." />
   <meta name="front-end technicist" content="" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
   <link rel="dns-prefetch" href="http://res.nie.netease.com">
@@ -25,7 +25,7 @@
 	<div id="wrap-bg1">
 		<div class="main">
 		
-			<!--ԲȦ-->
+			<!--圆圈-->
 			<div class="round">
 				<div class="hold hold1">
 					<div class="pie pie1"></div>
@@ -41,23 +41,23 @@
 				
 			</div>
 		
-			<!--����ʱ-->
+			<!--倒计时-->
 			<div class="lxftime">
 			</div>
 			<!--btn-->
-			<div class="btn"><span class="txt">�����ֻ��ţ��Ŷ�Ӯȡ�ڲ��Ȼ�</span><span class="red">GOAL!</span></div>
+			<div class="btn"><span class="txt">留下手机号，排队赢取内测先机</span><span class="red">GOAL!</span></div>
 			<!--share-->
 			<div id="share"></div>
-			<!-- �����İ� -->
+			<!-- 分享文案 -->
 			<div id="sharetxt" style="display:none;"></div>
 			<div id="shareimg" style="display:none;"></div>
 		</div>  
 	</div>
       
 	<div id="footer">
-	    <!-- NIE �ײ���Ȩ Start -->
+	    <!-- NIE 底部版权 Start -->
 		<div id="NIE-copyRight"> </div>
-		<!-- NIE �ײ���Ȩ End -->
+		<!-- NIE 底部版权 End -->
 	</div>
 </div>
 
@@ -66,28 +66,28 @@
 
 <div class='dialog' id="pop" style="display:none;">
 	<a class="close" id="closePop" href="javascript:;"></a>
-	<h2>��ħ�ײ��ʸ������롰�֡�</h2>
+	<h2>恶魔首测资格，抢先入“手”</h2>
 	
 	<div class="dialog-container">
-	    <p>�����׿���Է���������<span class="name">����ħ��Ҫ����</span>�����ײ⣬��ħģʽ����������������ԤԼ�� </p>
+	    <p>网易首款策略防御类手游<span class="name">《恶魔不要啊》</span>神秘首测，恶魔模式，即将开启。立即预约！ </p>
 		<form id="vote_form" method="post">
 			<div class="d2_formBox">
 					   <div class="g-clr mb15 rel">
-							<label>�ֻ����룺</label>
+							<label>手机号码：</label>
 							<span class="input phone_input">
-								<input type="text" placeholder="�����������ֻ�����" id="sphone" />
+								<input type="text" placeholder="请输入您的手机号码" id="sphone" />
 							</span>
 						</div>
 						<div class="g-clr mb15 rel">
-							<label>�ֻ�ϵͳ��</label>
+							<label>手机系统：</label>
 							<div class="phone_os_box input" id="phone_os_box">
-								<h4 class="phone_os_select" data-value="other">IOSԽ����</h4>
+								<h4 class="phone_os_select" data-value="other">IOS越狱版</h4>
 								
 							</div>
 						</div>
 						<ul class="phone_os_list" id="phone_os_list">
-                                    <li class="mt15"><a data-value="2">IOSԽ����</a></li>
-									<li><a data-value="0">IOS����</a></li>
+                                    <li class="mt15"><a data-value="2">IOS越狱版</a></li>
+									<li><a data-value="0">IOS正版</a></li>
                                     
 									<li><a data-value="1">ANDROID</a></li>
 						</ul>
@@ -101,11 +101,11 @@
 
 <div class='dialog' id="pop1" style="display:none;">
 	<a class="close" id="closePop" href="javascript:;"></a>
-	<h2>��ϲ�ɹ�ԤԼ�ײ��ʸ�</h2>
+	<h2>恭喜成功预约首测资格！</h2>
 	
 	<div class="dialog-container">
 	    <img src="http://res.nie.netease.com/em/qt/14/0423_yg/images/pic.jpg"/>
-        <p style="margin-top:10px; font-family:'΢���ź�'; font-size:14px; color:#6d6d6d;">2014�������η���������ħΧ�ǣ�������Ϯ��������С���һ���������롰�֡���</p>
+        <p style="margin-top:10px; font-family:'微软雅黑'; font-size:14px; color:#6d6d6d;">2014网易手游发力啦！恶魔围城，神秘来袭！快邀请小伙伴一起来抢先入“手”。</p>
         <div class="share2"></div>
 	</div>
 </div>
