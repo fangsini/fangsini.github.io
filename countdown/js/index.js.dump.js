@@ -1,6 +1,6 @@
 $(function(){
     nie.config.copyRight.setWhite();
-	//·ÖÏí
+	//åˆ†äº«
 	nie.use(['nie.util.shareV2'], function() {
 		var sharetxt = $('#sharetxt').text();
 		var shareimg = $('#shareimg').text();
@@ -23,17 +23,17 @@ $(function(){
 	
 	
 	
-	//µ¯´°
+	//å¼¹çª—
 	$('.btn').click(function(){
 	    openPop('#pop');
 	});
-	//¹Ø±Õµ¯´°
+	//å…³é—­å¼¹çª—
 	$('.close').click(function(){
 	    $('#pop').hide();
 		$('#pop1').hide();
 		$('#bg').hide();
 	});
-	//±íµ¥
+	//è¡¨å•
 	var $phone_os_box = $('#phone_os_box'),
         $phone_os_box_h4 = $phone_os_box.find('h4'),
         $phone_os_list = $('#phone_os_list'),
@@ -61,9 +61,9 @@ $(function(){
 		  $(".phone_os_list a").click(function(){ 
 			   var index=parseInt($(this).attr("data-value"));
 			   switch(index){
-					 case 0:{$("#ios").attr('checked', 'checked');$(".phone_os_select").text("IOSÕı°æ").attr("data-value","ios"); break;}
+					 case 0:{$("#ios").attr('checked', 'checked');$(".phone_os_select").text("IOSæ­£ç‰ˆ").attr("data-value","ios"); break;}
 					 case 1:{$("#android").attr('checked', 'checked'); $(".phone_os_select").text("Android").attr("data-value","android"); break;}
-					 case 2:{$("#other").attr('checked', 'checked');$(".phone_os_select").text("IOSÔ½Óü°æ").attr("data-value","other"); break;}
+					 case 2:{$("#other").attr('checked', 'checked');$(".phone_os_select").text("IOSè¶Šç‹±ç‰ˆ").attr("data-value","other"); break;}
 			   }   
 		  });
 
@@ -77,9 +77,9 @@ $(function(){
 				phoneNum = $("#sphone").val();
 
 			if(!phoneNum){
-				alert('ÇëÊäÈëÄúµÄÊÖ»úºÅÂë');
+				alert('è¯·è¾“å…¥æ‚¨çš„æ‰‹æœºå·ç ');
 			}else if(!validPhone(phoneNum)){
-			    alert('ÇëÊäÈëÕıÈ·µÄÊÖ»úºÅ');
+			    alert('è¯·è¾“å…¥æ­£ç¡®çš„æ‰‹æœºå·');
 			}else{
 				collectPho("emby",phoneNum,mobileos,window.location.href);
 				}
@@ -101,29 +101,29 @@ $(function(){
 			});
 		}
 		
-		//µ¹¼ÆÊ±
+		//å€’è®¡æ—¶
 		nie.use(["util.bjTime","util.cookie"],function(){
 			function showTime(t){
 				var begin = t;
 				function showT(){
 					t=t+1;
-					//myDateÎª»î¶¯×îÖÕÊ±¼ä
+					//myDateä¸ºæ´»åŠ¨æœ€ç»ˆæ—¶é—´
 					var myDate=new Date("05/31/2014 00:00:00");
 					var overD = Math.floor((myDate.getTime()/1000-t)/60/60/24);
 					var overH = Math.floor((myDate.getTime()/1000-t)/60/60 - overD*24);
 					var overM = Math.floor((myDate.getTime()/1000-t)/60 - overD*24*60 - overH*60);
 					var overS = Math.floor((myDate.getTime()/1000-t) - overD*24*60*60 - overH*60*60 -overM*60);
-					var d = myDate.getTime()/1000-t;            //Ä¿Ç°Ê£ÏÂµÄÊ±¼ä
-					//var allLeft = myDate.getTime()/1000 - begin;//×î¿ªÊ¼Ê£ÏÂµÄÊ±¼ä
+					var d = myDate.getTime()/1000-t;            //ç›®å‰å‰©ä¸‹çš„æ—¶é—´
+					//var allLeft = myDate.getTime()/1000 - begin;//æœ€å¼€å§‹å‰©ä¸‹çš„æ—¶é—´
 					// var spend = allLeft - d;
 					// var deg = 360*spend/allLeft;
 					
-					//²Î¿¼±ê×¼40Ìì
+					//å‚è€ƒæ ‡å‡†40å¤©
 					var standard = 40*24*60*60;
 					var spend = standard - d;     
 					var deg = 360*spend/standard;
 					
-					//Ğ¡Ô²È¦¸ú×Å×ß
+					//å°åœ†åœˆè·Ÿç€èµ°
 					if(deg>=0&&deg<=360){
 						$('.go').css("-o-transform","rotate("+deg+"deg)");
 						$('.go').css("-moz-transform","rotate("+deg+"deg)");
@@ -131,7 +131,7 @@ $(function(){
                                                 $('.go').css("transform","rotate("+deg+"deg)");
 					}
 					
-					//»­ÉÈĞÎ
+					//ç”»æ‰‡å½¢
 					if(deg<=180&&deg>=0){
 						var x = deg+180;
 						$('.pie1').css("-o-transform","rotate("+x+"deg)");
@@ -168,7 +168,7 @@ $(function(){
 					}
 					if(t>=myDate.getTime()/1000){
 					$(".lxftime").html("<span class='day'>00</span><span class='hour'>00</span><span class='minute'>00</span><span class='second'>00</span>")			
-					//Èç¹û½áÊøÈÕÆÚĞ¡ÓÚµ±Ç°ÈÕÆÚ¾ÍÌáÊ¾¹ıÆÚÀ²
+					//å¦‚æœç»“æŸæ—¥æœŸå°äºå½“å‰æ—¥æœŸå°±æç¤ºè¿‡æœŸå•¦
 					}
 				}
 				setInterval(showT,1000);
@@ -207,7 +207,7 @@ function validPhone(num) {
 	}
 }
 
-//µ¯²ãµ¯³ö
+//å¼¹å±‚å¼¹å‡º
 function openPop(popId){
 	$('#bg').show().css({"height":$(document).height()+"px"});
 	var innerLeft = ($(document).width()-$(popId).width())/2;
