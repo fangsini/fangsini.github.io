@@ -1,0 +1,209 @@
+#wrap{position:relative; max-width:1920px;min-width:1000px; _width:expression((document.documentElement.clientWidth>1920||document.body.clientWidth>1920)?"1920px":((document.documentElement.clientWidth<960||document.body.clientWidth<960)?"960px":"100%")); margin:0 auto; overflow:hidden; font:12px "ËÎÌו";}
+
+#wrap-bg1{
+    background:url(../images/bg.jpg) center no-repeat;
+	height: 897px;
+}
+
+.main{
+    width:1000px;
+	position:relative;
+	height: 897px;
+	margin:0 auto;
+}
+
+/*.round*/
+.round{
+    width:572px;
+	height:572px;
+    position:absolute;
+	top:125px;
+	left:212px;
+}
+.hold{
+    width:572px;
+	height:572px;
+    position:absolute;
+	z-index:1;
+}
+.hold1{clip:rect(0px,572px,572px,286px);}
+.hold2{clip:rect(0px,286px,572px,0px);}
+.pie{
+    width:572px;
+	height:572px;
+	background:#f43259;
+	border-radius:50%;
+	position:absolute;
+	z-index:1;
+}
+.pie1{
+    clip:rect(0px,572px,572px,286px);
+}
+.pie2{
+    clip:rect(0px,286px,572px,0);
+}
+.bg{
+    width:572px;
+	height:572px;
+	position:absolute;
+	background:url(../images/rbg.jpg) no-repeat;
+	border-radius:50%;
+}
+.time{
+    width:528px;
+	height:528px;
+	border-radius:50%;
+	background:url(../images/time.jpg) no-repeat;
+	z-index:2;
+	position:absolute;
+	top:20px;
+	left:22px;
+}
+.go{
+    width:548px;
+	height:548px;
+	position:absolute;
+	top:10px;
+	left:12px;
+	border-radius:50%;
+	z-index:2;
+	/* background:white; */
+}
+.direction{
+    width:38px;
+	height:40px;
+    background:url(../images/direction.png) no-repeat;
+	position:absolute;
+	top:-23px;
+	left:259px;
+	z-index:2;
+}
+
+
+.lxftime{
+    position:absolute;
+	top:426px;
+	left:315px;
+	z-index:3;
+}
+.day, .hour, .minute, .second{
+    color:white;
+	font-size:70px;
+	margin-right:30px;
+}
+
+.btn{
+    width:314px;
+	height:44px;
+	line-height:35px;
+    position:absolute;
+	top:547px;
+	left:344px;
+	cursor:pointer;
+	color:#14171d;
+	font-size:14px;
+	font-weight:bold;
+	z-index:3;
+}
+.txt{padding-left:18px;}
+.red{font-size:22px;color:#f43259;font-weight:bold;padding-left:3px;}
+
+#share{
+    position:absolute;
+	bottom:0;
+	left:100px;
+}
+#share .NIE-share-txt, #share .NIE-share2 .NIE-share-more{display:none!important;}
+
+
+#footer {text-align:center;height:100px;background:black;position:relative;}
+#footer,#footer a{color:#e8e8e8;}
+
+
+/*dialog*/
+.bg {display: block;}
+.dialog {position: absolute;width: 599px;height: 441px;background: url(../images/pop.png) no-repeat;z-index: 10000;}
+.dialog .close {position: absolute; top: 13px; right: 10px; display: block; width: 60px; height: 60px; }
+.dialog h2 {height:98px; line-height:98px;font-size: 30px; color: #00cab9; font-weight: bold;text-align: center;}
+.dialog-container {text-align: center;width:334px;margin:0 auto;padding-top:24px;}
+.dialog-container p { height: 60px;text-align:left;}
+.dialog-container form{
+	margin-top:20px;
+}
+.dialog-container form p{
+	text-align:center;
+}
+.dialog-container p label {font-size: 18px; color: #6d6d6d;line-height: 1;}
+.in-text {width: 172px; padding: 0 20px;height: 43px;line-height:43px;font-size: 18px; color: #6d6d6d; vertical-align: middle; background: url(../images/input.png) no-repeat; border: 0;}
+/*select*/
+.mod_select {z-index:5;width: 301px; height: 50px; margin: 0 auto;}
+.select_label{float:left;font-size: 18px;color: #6d6d6d;line-height: 2;}
+.select_box{float:left;position:relative;cursor:pointer;width:209px;height: 40px;margin-left: 2px; background: url(../images/input.png) 0 -48px no-repeat;font-size: 18px; color: #6d6d6d;}
+.select_txt{display:inline-block;width:170px;height:40px;line-height:40px;cursor:pointer;overflow:hidden; color:#4a4a4a;z-index:3;}
+.option{position:absolute;top:19px;left: 3px;width:206px;z-index:2;overflow:hidden;display:none;
+    background:url(http://res.nie.netease.com/rz/gw/14v1/pc/images/d2_phone.png) no-repeat;
+	filter: Alpha(opacity=70);opacity: 0.7;
+	padding-top:15px;
+	border-radius:;
+}
+.option a{display:block;width:129px;height:32px;line-height:40px;text-align:center;margin:0 35px;border-bottom:1px solid #fff;}
+.option a:hover{color:red;}
+.dialog-btn { width: 208px; height: 70px;margin-left: 92px; font-size: 24px; color:#ffffff;  background: url(../images/submit.png) no-repeat;border: 0;cursor:pointer;margin-top:20px;}
+.dialog-container p{color:#b3b3b3;font-size:16px; line-height:27px;}
+.name{color: #00cab9;}
+
+#bg{display: none;position: absolute;width: 100%;height: 100%;background: #000;filter: Alpha(opacity=70);opacity: 0.7;top: 0;left: 0;z-index: 10000;}
+
+h4,ul{margin:0; padding:0;}
+.d2_formBox{width:340px; height:210px; font-family:"Microsoft Yahei"}
+.d2_formBox .mb15{ margin-bottom: 15px; }
+.d2_formBox .mt15{ margin-top: 25px; }
+.d2_formBox label{  color: #b3b3b3; font-size:16px;width: 83px; height: 39px; line-height: 35px; display: inline; float: left; }
+.d2_formBox .input{
+    height: 40px; width: 209px; text-align: center; line-height: 39px; border:none;
+    display: inline; float: left;
+}
+.d2_formBox .phone_input{ background: url(../images/input.png) no-repeat 0 0; }
+.d2_formBox .phone_input input{
+    height: 35px; width: 170px; margin: 0 auto; text-align: center; line-height: 35px; border:none;
+    background: none;
+	color:white;
+	font-size:16px;
+}
+.phone_os_box{ position: relative; }
+.phone_os_box h4{
+    height: 41px; width: 209px; text-align: center; line-height: 35px;
+    cursor: pointer;
+    background: url(../images/input.png) 0 -48px no-repeat;
+    z-index:5;
+	color:#b3b3b3;
+	font-size:16px;
+}
+.phone_os_list{
+    position: absolute; width: 203px; top:275px; left:217px;
+    height: 111px; overflow:hidden; display: none;
+    background: url(../images/d2_phone.png) no-repeat 0 0;
+    z-index:3;
+}
+.phone_os_list li{
+    width: 128px; margin:0 auto; height: 26px; line-height: 26px;
+    cursor: pointer; list-style:none;
+}
+.phone_os_list a{ color: #b3b3b3; font-size:14px;}
+.phone_os_list a:hover{ color:#e2322e; text-decoration: none; }
+.d2_formBox .d2_btn{ padding-left: 83px; }
+.d2_formBox .d2_btn input{
+    display: block; width: 210px; height: 71px; border:none; cursor: pointer; font-size: 20px;
+    color:#ebd9be;
+    background: url(../images/submit.png) no-repeat;
+	_margin-top:10px;
+	_margin-right:30px;
+}
+.d2_formBox .rel{ position: relative; z-index: 4; overflow:hidden;}
+.d2_formBox .d2_btn{ position: relative; z-index: 1; }
+
+#pop1{width:593px; height:518px; display:none; background:url(../images/pop2.png) no-repeat;}
+#pop1 .dialog-container{width:510px;}
+#pop1 .share2{margin-top:35px; margin-left:30px;}
+
+.share2 .NIE-share2 .NIE-share-iconBtn a:hover img,.share2 .NIE-share2 .NIE-share-iconBtn a img,.NIE-share2 .NIE-share-more em:hover,.NIE-share2 .NIE-share-more em{background:none!important;}
