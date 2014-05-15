@@ -1,4 +1,4 @@
-//speed：苹果掉落的速度；
+﻿//speed：苹果掉落的速度；
 //life：玩家的生命
 //proTime：每两个苹果产生的间隔时间
 var speed = 1,
