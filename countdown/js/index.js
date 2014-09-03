@@ -118,7 +118,7 @@
 					// var spend = allLeft - d;
 					// var deg = 360*spend/allLeft;
 					
-					//参考标准40天
+					//参考标准30天
 					var standard = 40*24*60*60;
 					var spend = standard - d;     
 					var deg = 360*spend/standard;
