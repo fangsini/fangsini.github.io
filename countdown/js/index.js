@@ -108,7 +108,7 @@
 				function showT(){
 					t=t+1;
 					//myDate为活动最终时间
-					var myDate=new Date("05/31/2014 00:00:00");
+					var myDate=new Date("09/30/2014 00:00:00");
 					var overD = Math.floor((myDate.getTime()/1000-t)/60/60/24);
 					var overH = Math.floor((myDate.getTime()/1000-t)/60/60 - overD*24);
 					var overM = Math.floor((myDate.getTime()/1000-t)/60 - overD*24*60 - overH*60);
