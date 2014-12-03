@@ -11,6 +11,8 @@ window.onload = function(){
     colorClick(BackColor,doc);
 };
 
+asdf
+
 //get ID
 function $(id){
 	return document.getElementById(id);
